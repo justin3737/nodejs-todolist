@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "211213ed-166a-4266-a50a-b16f98b2a6c8",
+		"name": "Node.js TodoList - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新增單筆代辦事項",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要刷牙\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pacific-chamber-78328.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"pacific-chamber-78328",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆事項",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天不要刷牙\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pacific-chamber-78328.herokuapp.com/todos/f696dfba-647f-44be-b13c-45415a00db49",
+					"protocol": "https",
+					"host": [
+						"pacific-chamber-78328",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"f696dfba-647f-44be-b13c-45415a00db49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得所有代辦事項",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要刷牙\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pacific-chamber-78328.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"pacific-chamber-78328",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://pacific-chamber-78328.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"pacific-chamber-78328",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://pacific-chamber-78328.herokuapp.com/todos/2297c0ad-c9da-4a72-bc50-1ad0f7fe3cad",
+					"protocol": "https",
+					"host": [
+						"pacific-chamber-78328",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"2297c0ad-c9da-4a72-bc50-1ad0f7fe3cad"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
